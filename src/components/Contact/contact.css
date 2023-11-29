@@ -1,0 +1,106 @@
+#contactPage {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100vw;
+    max-width: 70rem;
+    min-height: calc(100vh -4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#clients {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.contactPageTitle {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 1rem 0;
+    /* padding: 1rem 0; */
+
+}
+.clientDesc {
+  text-align: center;
+  max-width: 50rem;
+  font-weight: 200;
+  font-size: 1rem;
+}
+.clientImgs {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 1rem 0;
+
+}
+.clientImg {
+    object-fit: fill;
+    height: 15rem;
+    width: 15rem;
+    /* width: 25%; */
+    padding: 0.25rem;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60rem;
+    /* background: darkgray; */
+    margin: 0 0.5rem;
+}
+.fullname,.email,.msg {
+    width: 40rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+.submitBtn {
+    width: 8.5rem;
+    padding: 0.75rem;
+    background: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+}
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.link {
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0 0.5rem;
+    margin: 0.3rem 0.75rem;
+    object-fit: fill;
+    /* background-color: bisque; */
+    
+}
+@media screen and (max-width: 700px) {
+    .fullname,.email,.msg {
+        width: 30rem;
+    }
+}

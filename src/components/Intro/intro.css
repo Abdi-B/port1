@@ -1,0 +1,118 @@
+#intro {
+    height: calc(100vh - 5rem);
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: green; */
+    opacity: 0.6;
+    background-color: transparent;
+
+}
+.introContent {
+    height: 70vh;
+    width: 50%;
+    padding: 2rem;
+    /* background: bisque; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+.bgImg {
+    /* background: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; 
+    margin: 2rem 0;
+    /* background: firebrick; */
+}
+.bg{
+    
+    height: 220px;
+    width: 200px;
+    border-radius: 50%;
+    /* border-radius: 10rem; */
+    padding: 0.2rem;
+    object-fit: fill;
+    border: 2px solid lightpink;
+    background-color: whitesmoke;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: start;
+}
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introText {
+    font-size: 3rem;
+    /* background: blue; */
+    margin-left: 2rem;
+}
+.introName {
+    color: yellow;
+}
+.btn{
+    background-color: white;
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    transition: 0.3s;
+}
+.para {
+    text-align: justify;
+    font-size: medium;
+    letter-spacing: 1px;
+    /* word-spacing: 2px; */
+}
+@media screen and (max-width: 860px) {
+    #intro {
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+        /* background: red; */
+    }
+    .bgImg { 
+        font-size: small;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+    .bg{
+        height: 300px;
+        width: 200px;
+    }
+    /* .introContent {
+        width: 100%;
+    } */
+    .introContent {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .para {
+        text-align: justify;
+    }
+    
+}

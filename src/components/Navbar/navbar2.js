@@ -1,0 +1,48 @@
+import React, { useState } from 'react'
+import "./navbar2.css";
+import Logo  from "../../assets/Logo.svg";
+import { Link } from "react-scroll";
+import  contact  from "../../assets/contact.svg";
+import  menu  from "../../assets/menu.svg";
+
+const Navbar2 = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  return (
+    <nav className="navbar">
+        <img src={Logo} alt="" className='logo'  />
+        <div className="desktopmenu">
+            <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
+            <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
+            <Link activeClass='active' to='works' spy={true} smooth={true} offset={-70} duration={500} className="desktopMenuListItem">Portfolio</Link>
+            <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={500} className="desktopMenuListItem">Clients</Link>
+            {/* check offset */}
+        </div>
+            {/* <button className="desktopMenuBtn"  onClick={() => {
+              document.getElementById('contact').scrollIntoView({behavior: 'smooth'})
+            }
+            }>
+                <img src={contact} alt="" className="desktopMenuImg" /> Contact Me
+            </button> */}
+
+        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={500} >
+          <button className="desktopMenuBtn" >
+              <img src={contact} alt="" className="desktopMenuImg" /> Contact Me
+          </button>
+        </Link>
+
+        {/* For Mobile */}
+
+        <img src={menu} alt="" className='mobMenu' onClick={() => {setShowMenu(!showMenu)}} />
+        <div className="navMenu" style={{display: showMenu? 'flex': 'none'}}>
+            <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => {setShowMenu(false)}}>Home</Link>
+            <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={() => {setShowMenu(false)}}>About</Link>
+            <Link activeClass='active' to='works' spy={true} smooth={true} offset={-70} duration={500} className="ListItem" onClick={() => {setShowMenu(false)}}>Portfolio</Link>
+            <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={500} className="ListItem" onClick={() => {setShowMenu(false)}}>Clients</Link>
+            <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-10} duration={500} className="ListItem" onClick={() => {setShowMenu(false)}}>Contact</Link>
+            {/* check offset */}
+        </div>
+    </nav>
+  )
+}
+
+export default Navbar2

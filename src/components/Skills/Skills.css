@@ -1,0 +1,118 @@
+#skills{
+    width: 100vw;
+    /* max-width: 65rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: justify; */
+    margin: 1rem auto;
+    background-color: whitesmoke;
+    color: black;
+}
+.Title {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+.description {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 1rem 2rem;
+}
+.lang {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* background: green; */
+  padding-top: 2rem;
+  position: relative;
+}
+.front,.back {
+    padding-bottom: 2rem;
+    /*background: darkolivegreen; */
+    width: 47%;
+    box-shadow: 5px 0px 10px 0px lightslategrey;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+    animation: ease-in;
+}
+.front:hover,.back:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 2px;
+}
+.fed {
+    width: 100%;
+    padding-bottom: 1rem;
+    /* background: red; */
+    text-align: center;
+    padding-top: 1rem;
+}
+.frontlist {
+    position: relative;
+width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ padding-left: 2rem;
+ 
+}
+
+.circle {
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+}
+.html1 {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    /* background-color: green; */
+    margin: 2rem 0;
+}
+.name {
+    font-weight: 200;
+    font-size: 2rem;
+}
+.level{
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 1rem ;
+}
+@media screen and (max-width: 900px){
+    .lang {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .front,.back {
+        width: 70%;
+        /* background: forestgreen; */
+        margin: 1rem 0;
+    }
+    .name {
+        font-weight: 200;
+        font-size: 1rem;
+    }
+    .level{
+        font-weight: 100;
+        font-size: 0.75rem;
+    }
+    .description {
+        /* font-weight: 300; */
+        font-size: 1rem;
+        max-width: 35rem;
+        padding: 1rem;
+        text-align: justify;
+    }
+    .circle {
+        /* object-fit: cover; */
+        height: 2rem;
+        width: 2rem;
+        padding: 0.5rem;
+    }
+}
