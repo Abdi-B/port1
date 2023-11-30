@@ -18,9 +18,9 @@ const Port = () => {
                 <img src={bg} alt="" className="worksImg" />
                 <img src={bg} alt="" className="worksImg" />
                 <img src={bg} alt="" className="worksImg" />
+                {/* <img src={bg} alt="" className="worksImg" />
                 <img src={bg} alt="" className="worksImg" />
-                <img src={bg} alt="" className="worksImg" />
-                <img src={bg} alt="" className="worksImg" />
+                <img src={bg} alt="" className="worksImg" /> */}
         </div>
         <button className="workBtn">See More</button>
     </section>

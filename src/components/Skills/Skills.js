@@ -6,13 +6,15 @@ const Skills = () => {
   return (
     <section id="skills">
         <span className="Title">MY SKILLS</span>
-        <span className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eum 
-            ipsum fuga incidunt obcaecati vitae reprehenderit similique earum 
-            quia sunt, ad optio voluptatibus suscipit sit nulla animi at nemo 
-            asperiores pariatur. Nemo repellendus sit accusamus odio ipsum error 
-            voluptate omnis ratione totam soluta rerum in excepturi tempora, 
-            vel iste suscipit.</span>
-        
+        <span className="description">     
+            As a Full-Stack Developer, I possess a diverse skill set, demonstrating proficiency 
+            in multiple programming languages for both front-end and back-end development. 
+            Furthermore, my adaptability to new technologies, coupled with an insatiable thirst for 
+            knowledge, enables me to swiftly grasp and implement emerging trends. This approach ensures 
+            the creation of innovative and future-proof solutions in software development.<br />
+            Please find below a review of my listed experience.
+        </span>
+    
         <div className="lang">
             <div className="front">
                 <h1 className='fed'>Front End Development</h1>
@@ -47,7 +49,7 @@ const Skills = () => {
                                 <img src={checked} alt="" className="circle" />
                                 <div>
                                     <span className="name">Typescript</span>
-                                    <span className="level">Experienced</span>
+                                    <span className="level">Basic</span>
                                 </div>
                             </div>
                             <div className="html1">
@@ -64,7 +66,6 @@ const Skills = () => {
                                     <span className="level">Intermediate</span>
                                 </div>
                             </div>
-
                     </div>
                 </div>
 

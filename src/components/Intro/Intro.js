@@ -11,7 +11,7 @@ const Intro = () => {
         <div className="name">
           <span className="hello">Hello,</span>
           <span className="introText">I'm <span className="introName">Samuel B</span> <br/>
-            Website Developer
+            MERN Full-Stack Developer
           </span> 
           <button className="btn">Work with me</button>
        
@@ -20,13 +20,13 @@ const Intro = () => {
       <div className="introContent">
         
         <p className="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Esse itaque, incidunt tempora quam perspiciatis quia totam 
-            deserunt, ad amet pariatur obcaecati, consequuntur alias 
-            cupiditate laborum magni suscipit omnis beatae dolorum sit 
-            ipsum fuga! Laudantium eius maxime laborum dolor, quae distinctio, 
-            dolore quo harum nulla corrupti 
-            error tempora explicabo pariatur deleniti?
+        As a Junior MERN (MongoDB, Express.js, React, Node.js) Full-Stack  developer, 
+        I possess a solid foundation in full-stack web development, leveraging 
+        these technologies to create efficient and dynamic applications. My experience 
+        includes utilizing MongoDB for database management, implementing server-side 
+        functionalities with Node.js and Express.js, and crafting engaging user interfaces with React. 
+        With a keen eye for detail and a passion for learning, I actively seek opportunities to 
+        contribute fresh perspectives and innovative solutions while collaborating within a team environment.
         </p>
         <Link><button className='btn'>Download CV</button></Link>
       </div>          
